@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.top-container {
+  background-color: #22a699a4;
+  padding-top: 300px;
+  margin: 0px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+
+.airplane {
+  position: absolute;
+  top: 100px;
+  right: 200px;
+  rotate: 15deg;
+}
+.cloud-1 {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+.cloud-2 {
+  position: absolute;
+  top: 100px;
+  right: 500px;
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+  color: #f2be22;
+  text-align: center;
+  font-size: 6rem;
+  text-shadow: 3px 3px #f24c3d;
+}
+span {
+  text-decoration: underline;
+}
+.top-container p {
+  padding-bottom: 20px;
+}
+
+.mid-container {
+  flex: 1 0;
+  text-align: center;
+  background-color: #66bfbfc2;
+  color: #66bfbf;
+  font-size: 7rem;
+  height: 100vh;
+}
+
+.mid-container > h2,
+.mid-container > p {
+  font-size: 3.5rem;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  min-height: 100vh;
+}
+.container {
+  perspective: 1000px;
+}
+.container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  transition: transform 1000ms;
+  transform-style: preserve-3d;
+  width: 100px;
+  font-size: 1.5rem;
+  text-align: center;
+
+  background-color: #66bfbf;
+  font-weight: normal;
+
+  height: 100px;
+  width: 150px;
+  border-radius: 25px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+}
+.front {
+  width: 100px;
+}
+.back {
+  border-radius: 25px;
+  transform: rotateY(180deg);
+  color: white;
+}
+@media (max-width: 700px) {
+  
+  .flexbox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  .card {
+    margin: 10px;
+  }
+  .airplane {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    rotate: 15deg;
+  }
+  .cloud-1 {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+  }
+  .cloud-2 {
+    position: absolute;
+    top: 150px;
+    right: 150px;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  .mid-container > h2 {
+    font-size: 3rem;
+  }
+}
