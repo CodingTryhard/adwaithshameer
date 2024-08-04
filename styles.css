@@ -183,6 +183,8 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    max-width: 90%; /* Make the card responsive */
+    margin: 0 auto; /* Center the card horizontally */
 }
 
 .text {
@@ -216,8 +218,10 @@ body {
 }
 
 .image-container {
-    width: 18.75rem; /* 300px */
-    height: 25rem; /* 400px */
+    width: 100%; /* Full width for images on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 25rem; /* Maximum width for larger screens */
+    margin-bottom: 2rem; /* Space below the image */
     background-image: url('image.jpeg'); /* Replace white rectangle with an image */
     background-size: cover; /* Ensure image covers the container */
     display: flex;
@@ -228,7 +232,8 @@ body {
 }
 
 .image-container img {
-    max-width: 100%;
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 3%;
 }
 
@@ -238,11 +243,12 @@ body {
     background: #070704; /* Match the background color to black */
     color: white; /* Set text color to white */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack items vertically */
     margin: 5rem 0; /* 80px */
     height: auto; /* Allow height to adjust based on content */
+    text-align: center; /* Center align text within this section */
 }
 
 .additional-content .text-container {
@@ -260,6 +266,19 @@ body {
         grid-template-columns: 1fr; /* Single column layout */
     }
 
+    .additional-content {
+        padding: 3rem; /* Reduce padding on smaller screens */
+        flex-direction: column; /* Stack image above text and buttons */
+        height: auto; /* Allow height to adjust based on content */
+        margin: 0; /* Remove top and bottom margins to utilize more space */
+    }
+
+    .image-container {
+        max-width: 90%; /* Full width for images */
+        margin-bottom: 2rem; /* Increase space below the image for clarity */
+        height: auto; /* Adjust height to auto to fit the content */
+    }
+
     .card {
         flex-direction: column; /* Stack items vertically */
         text-align: center; /* Center align text */
@@ -270,17 +289,6 @@ body {
 
     .text {
         max-width: 100%; /* Make text container wider */
-    }
-
-    .image-container {
-        width: 100%; /* Full width for images */
-        height: 30rem; /* Set a fixed height for the image container */
-        margin-top: 1.25rem; /* 20px */
-    }
-
-    .image-container img {
-        width: 100%; /* Full width for images */
-        height: auto; /* Maintain aspect ratio */
     }
 
     .main-text {
@@ -306,4 +314,44 @@ body {
     .subheading {
         font-size: 3vw; /* Adjust subheading size */
     }
+}
+
+
+.additional-content {
+    padding: 5rem; /* Increased padding to give more space */
+    background: #070704; /* Match the background color to black */
+    color: white; /* Set text color to white */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack items vertically */
+    margin: 5rem 0; /* 80px */
+    height: auto; /* Allow height to adjust based on content */
+    text-align: center; /* Center align text within this section */
+}
+
+.card {
+    padding: 1.875rem; /* 30px */
+    border: 0.125rem solid #fff; /* 2px */
+    border-radius: 0.9375rem; /* 15px */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 90%; /* Make the card responsive */
+    margin: auto; /* Center the card horizontally */
+}
+
+.image-container {
+    width: 100%; /* Full width for images on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 25rem; /* Maximum width for larger screens */
+    margin: 40px 0 2rem 0; /* Adjust top margin to move it lower */
+    background-image: url('image.jpeg'); /* Replace white rectangle with an image */
+    background-size: cover; /* Ensure image covers the container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem; /* 8px */
+    background-position: center; /* Center the image */
 }
