@@ -1,3 +1,7 @@
+html {
+    font-size: 16px; /* 1rem = 16px */
+}
+
 @font-face {
     font-family: 'Sequel100Black-86';
     src: url('fonts/Sequel100Black-86.ttf');
@@ -68,28 +72,28 @@ body {
 
 .main-text {
     font-family: 'Sequel100Black-86';
-    font-size: 60px;
-    letter-spacing: 1px;
+    font-size: 6vw;
+    letter-spacing: 0.0625rem; /* 1px */
     margin-bottom: 0;
 }
 
 .sub-text {
     font-family: 'Sequel100Black-95';
-    font-size: 30px;
-    letter-spacing: 1px;
+    font-size: 3vw;
+    letter-spacing: 0.0625rem; /* 1px */
     margin-top: 0;
 }
 
 /* New Content Section */
 .new-content {
-    padding: 40px; /* Adjust padding for more space */
+    padding: 2.5rem; /* 40px */
     background: #070704; /* Match the background color to black */
     color: white; /* Set text color to white */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 40px 0; /* Add space above and below */
+    margin: 2.5rem 0; /* 40px */
 }
 
 .text-container {
@@ -97,8 +101,8 @@ body {
     justify-content: center; /* Center text */
     align-items: center;
     width: 100%;
-    max-width: 900px; /* Reduce max width */
-    margin-bottom: 20px; /* Space between text and grid */
+    max-width: 56.25rem; /* 900px */
+    margin-bottom: 1.25rem; /* 20px */
 }
 
 .text-content {
@@ -107,20 +111,20 @@ body {
 
 .section-heading {
     font-family: 'Sequel100Black-95';
-    font-size: 36px; /* Smaller size */
+    font-size: 5vw;
     margin: 0;
 }
 
 .section-subtext {
     font-family: 'Sequel100Black-46';
-    font-size: 20px; /* Smaller size */
-    margin: 20px 0 20px 0; /* Space between subtext and border */
+    font-size: 3vw;
+    margin: 1.25rem 0; /* 20px */
 }
 
 .grid-container {
     display: grid; /* Use grid layout for 2x2 format */
     grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 20px; /* Space between grid items */
+    gap: 1.25rem; /* 20px */
     justify-items: center; /* Center items horizontally */
 }
 
@@ -138,7 +142,7 @@ body {
 
 .item:hover img {
     filter: brightness(1); /* Brighten on hover */
-    transform: translateZ(200px); /* 3D effect */
+    transform: translateZ(12.5rem); /* 200px */
 }
 
 /* Adjust all images when one is hovered */
@@ -162,19 +166,19 @@ body {
 }
 
 .heading {
-    font-size: 24px;
+    font-size: 4vw;
     margin: 0;
 }
 
 .subheading {
-    margin: 5px 0 20px 0;
-    font-size: 14px;
+    margin: 0.3125rem 0 1.25rem 0; /* 5px 0 20px 0 */
+    font-size: 2vw;
 }
 
 .card {
-    padding: 30px; /* Reduced padding */
-    border: 2px solid #fff; /* Thin white border */
-    border-radius: 15px;
+    padding: 1.875rem; /* 30px */
+    border: 0.125rem solid #fff; /* 2px */
+    border-radius: 0.9375rem; /* 15px */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -184,22 +188,21 @@ body {
 .text {
     max-width: 60%;
     font-family: 'Sequel100Black-45';
-    text-align: left; /* Align text to the left */
 }
 
 .text p {
-    margin: 10px 0;
+    margin: 0.625rem 0; /* 10px */
 }
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
     background-color: #007BFF;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    font-size: 16px; /* Ensure text size is consistent */
+    border-radius: 0.3125rem; /* 5px */
+    margin-top: 1.25rem; /* 20px */
+    font-size: 1rem; /* 16px */
 }
 
 .button.github {
@@ -208,19 +211,19 @@ body {
 
 /* Adjust button sizes to be the same */
 .button {
-    width: 150px; /* Set consistent width for both buttons */
+    width: 9.375rem; /* 150px */
     text-align: center; /* Center text in the button */
 }
 
 .image-container {
-    width: 300px; /* Reduced size */
-    height: 400px; /* Reduced size */
+    width: 18.75rem; /* 300px */
+    height: 25rem; /* 400px */
     background-image: url('image.jpeg'); /* Replace white rectangle with an image */
     background-size: cover; /* Ensure image covers the container */
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
+    border-radius: 0.5rem; /* 8px */
     background-position: center; /* Center the image */
 }
 
@@ -231,14 +234,15 @@ body {
 
 /* Additional Content Section */
 .additional-content {
-    padding: 50px; /* Default padding */
+    padding: 5rem; /* Increased padding to give more space */
     background: #070704; /* Match the background color to black */
     color: white; /* Set text color to white */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 80px 0; /* Default space above and below */
+    margin: 5rem 0; /* 80px */
+    height: auto; /* Allow height to adjust based on content */
 }
 
 .additional-content .text-container {
@@ -246,6 +250,60 @@ body {
     justify-content: center; /* Center text */
     align-items: center;
     width: 100%;
-    max-width: 1200px; /* Default max width */
-    margin-bottom: 20px; /* Space between text and grid */
+    max-width: 75rem; /* 1200px */
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .card {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center align text */
+        max-width: 90%; /* Make the card wider on small screens */
+        padding: 2.5rem; /* Increase padding */
+        border: 0.25rem solid #fff; /* Increase border size */
+    }
+
+    .text {
+        max-width: 100%; /* Make text container wider */
+    }
+
+    .image-container {
+        width: 100%; /* Full width for images */
+        height: 30rem; /* Set a fixed height for the image container */
+        margin-top: 1.25rem; /* 20px */
+    }
+
+    .image-container img {
+        width: 100%; /* Full width for images */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .main-text {
+        font-size: 8vw; /* Adjust main text size */
+    }
+
+    .sub-text {
+        font-size: 4vw; /* Adjust sub text size */
+    }
+
+    .section-heading {
+        font-size: 6vw; /* Adjust section heading size */
+    }
+
+    .section-subtext {
+        font-size: 4vw; /* Adjust section subtext size */
+    }
+
+    .heading {
+        font-size: 5vw; /* Adjust heading size */
+    }
+
+    .subheading {
+        font-size: 3vw; /* Adjust subheading size */
+    }
 }
